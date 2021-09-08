@@ -1,0 +1,239 @@
+//====================================================================================================
+.page {
+  position: relative;
+  top: 0;
+  left: 80px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  @media (max-width: $md3+px) {
+    position: static;
+  }
+}
+
+.main {
+  min-height: 100vh;
+  min-width: 100vw;
+  position: relative;
+
+  &__head {
+    position: absolute;
+    padding: 30px 120px 0 50px;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: $md3+px) {
+      display: none;
+    }
+  }
+
+  &__contacts {
+    a {
+      color: #fff;
+      font-weight: 400;
+      font-size: 14px;
+      &:last-child {
+        margin-left: 40px;
+      }
+      &:hover {
+        color: $orange;
+        transition: 0.3s;
+      }
+    }
+  }
+
+  &__lang {
+    a {
+      color: #fff;
+      font-size: 14px;
+      padding: 5px 8px;
+      &:last-child {
+        margin-left: 5px;
+      }
+      &:hover {
+        background-color: $orange;
+        transition: 0.3s;
+      }
+      &.active {
+        background-color: $orange;
+      }
+    }
+  }
+
+  &__content {
+    padding: 300px 30px 50px;
+    @media (max-width: $md3+px) {
+      padding: 300px 80px;
+      width: 100%;
+    }
+    &-text {
+      flex: 0 0 auto;
+      width: 58.33333333%;
+      @media (max-width: $md3+px) {
+        width: 80%;
+      }
+    }
+  }
+
+  &__content-subtitle {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0 0 20px;
+  }
+
+  &__content-title {
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 1;
+    margin: 0 0 15px;
+    color: #fff;
+  }
+
+  &__content-job {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 1;
+    margin: 0 0 15px;
+    color: $orange;
+  }
+
+  &__content-text {
+    font-weight: 300;
+  }
+}
+
+//====================================================================================================
+
+.about {
+  padding: 100px 0;
+  position: relative;
+  background: #0e0e17;
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media (max-width: $md2+px) {
+      flex-direction: column;
+    }
+  }
+
+  &__logo {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+    text-align: center;
+    margin-right: 90px;
+    @media (max-width: $md1+px) {
+      margin-right: 60px;
+    }
+    @media (max-width: $md2+px) {
+      margin-bottom: 60px;
+      margin-right: 0;
+      width: 70%;
+    }
+  }
+
+  &__logo-img {
+    border-radius: 50%;
+    width: 356px;
+    height: 358px;
+    margin: auto;
+    overflow: hidden;
+    border: 5px solid $orange;
+    @media (max-width: $md1+px) {
+      width: 300px;
+      height: 300px;
+    }
+  }
+
+  &__logo-links {
+    display: flex;
+    justify-content: center;
+
+    a {
+      width: 35px;
+      height: 35px;
+      line-height: 31px;
+      background: #fff;
+      border: 2px solid #fff;
+      color: #fff;
+      background-color: #000;
+      text-align: center;
+      border-radius: 50%;
+      position: relative;
+      margin: 0 15px;
+      transition: all 0.35s ease;
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &:first-child {
+        top: -35px;
+      }
+      &:last-child {
+        top: -35px;
+      }
+      &:nth-child(2) {
+        top: -20px;
+      }
+      &:hover {
+        background-color: $orange;
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+      }
+    }
+  }
+
+  &__logo-subtitle {
+    padding-top: 40px;
+    margin: 0;
+    font-size: 16px;
+  }
+
+  &__logo-title {
+    font-weight: 500;
+    font-size: 30px;
+  }
+
+  &__content {
+    padding: 0 20px;
+    margin-right: 40px;
+    flex: 0 0 auto;
+    @include adaptiv-value("width", 500, 300, 1);
+    @media (max-width: $md2+px) {
+      margin-bottom: 60px;
+      margin-right: 0;
+      width: 95%;
+    }
+    P {
+      line-height: 1.7;
+      font-size: 15px;
+      font-weight: 300;
+      margin-bottom: 16px;
+    }
+  }
+
+  &__stats {
+    padding-top: 15px;
+    display: flex;
+    @media (max-width: $md4+px) {
+      flex-direction: column;
+    }
+  }
+
+  &__stats-col {
+    width: 100%;
+    li {
+      padding: 4px 0;
+      label {
+        margin: 0;
+        font-weight: 500;
+        padding-right: 10px;
+      }
+    }
+  }
+}

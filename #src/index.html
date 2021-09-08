@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('_head.html',{
+"title":"Главная"
+})
+
+<body>
+  <div class="wrapper">
+    @@include('_header.html',{})
+    <main class="page">
+      <section id="main" class="main ">
+        <div class="main__head">
+
+          <div class="main__contacts">
+            <a href="tel:+380971670059">(097) 167-00-59</a>
+            <a href="mailto:matvssv.yura@gmail.com"> matvssv.yura@gmail.com</a>
+          </div>
+          <div class="main__lang">
+
+            <a href="#" class="active">RU</a>
+            <a href="#">EN</a>
+          </div>
+        </div>
+        <div class="main__content _container">
+          <div class="main__content-text">
+            <div class="main__content-subtitle">Hello, My name is</div>
+            <div class="main__content-title">
+              <h1>Yura Matveev</h1>
+            </div>
+            <div class="main__content-job">Front-End Developer</div>
+            <div class="main__content-text">I design and develop services for customers of all sizes, specializing in
+              creating stylish, modern websites, web services and online stores.</div>
+          </div>
+        </div>
+      </section>
+      <section id="about" class="about ">
+        <div class="_container">
+          <div class="about__container">
+            <div class="about__logo ">
+              <div class="about__logo-img"></div>
+              <div class="about__logo-links">
+                <a href="" class="">
+                  <div class="_icon-telegram"></div>
+                </a>
+                <a href="" class="_icon-github"></a>
+                <a href="" class="_icon-linkedin"></a>
+              </div>
+              <div class="about__logo-subtitle">Front-End Developer</div>
+              <div class="about__logo-title">Yura Matveev</div>
+            </div>
+            <div class="about__content ">
+              <h3 class="title">Biography</h3>
+              <p>I'm a Freelancer Front-end Developer with over 3 years of experience. I'm from San Francisco. I code
+                and
+                create web elements for amazing people around the world. I like work with new people. New people new
+                Experiences.</p>
+              <div class="about__stats">
+                <div class="about__stats-col">
+                  <ul>
+                    <li><label>Name:</label><span>Yura Matveev</span></li>
+                    <li><label>Birthday:</label><span>5 October 1999</span></li>
+                    <li><label>Age:</label><span>21 years</span></li>
+
+                  </ul>
+                </div>
+                <div class="about__stats-col">
+                  <ul>
+                    <li><label>Address:</label><span>Kyiv</span></li>
+                    <li><label>Phone:</label><span>(097) 167-00-59</span></li>
+                    <li><label>Email:</label><span>matvssv.yura@gmail.com</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="border"></div>
+        </div>
+      </section>
+    </main>
+    @@include('_footer.html',{})
+  </div>
+  @@include('_popup.html',{})
+  @@include('_js.html',{})
+</body>
+
+</html>
