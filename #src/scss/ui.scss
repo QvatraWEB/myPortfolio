@@ -8,6 +8,13 @@
   background-position: 50%;
   -webkit-filter: invert(1);
   filter: invert(1);
+  margin-right: auto;
+  margin-left: auto;
+  width: 90%;
+
+  @media (max-width: $md2+px) {
+    width: 80%;
+  }
 }
 
 .title {

@@ -1,8 +1,6 @@
 //====================================================================================================
 .page {
   position: relative;
-  top: 0;
-  left: 80px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -12,12 +10,14 @@
 }
 
 .main {
+  padding-left: 80px;
   min-height: 100vh;
   min-width: 100vw;
-  position: relative;
+  @media (max-width: $md3+px) {
+    padding-left: 0px;
+  }
 
   &__head {
-    position: absolute;
     padding: 30px 120px 0 50px;
     top: 0;
     left: 0;
@@ -66,9 +66,10 @@
   &__content {
     padding: 300px 30px 50px;
     @media (max-width: $md3+px) {
-      padding: 300px 80px;
+      padding: 200px 60px;
       width: 100%;
     }
+
     &-text {
       flex: 0 0 auto;
       width: 58.33333333%;
@@ -90,6 +91,10 @@
     line-height: 1;
     margin: 0 0 15px;
     color: #fff;
+    @media (max-width: $md4+px) {
+      font-size: 50px;
+      font-weight: 700;
+    }
   }
 
   &__content-job {
@@ -109,8 +114,11 @@
 
 .about {
   padding: 100px 0;
-  position: relative;
+  padding-left: 80px;
   background: #0e0e17;
+  @media (max-width: $md3+px) {
+    padding-left: 0px;
+  }
 
   &__container {
     display: flex;
@@ -146,6 +154,10 @@
     @media (max-width: $md1+px) {
       width: 300px;
       height: 300px;
+    }
+    @media (max-width: $md4+px) {
+      width: 200px;
+      height: 200px;
     }
   }
 

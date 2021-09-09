@@ -8,10 +8,19 @@
   height: 100vh;
   background: #0c0c14;
   @media (max-width: $md3+px) {
-    position: relative;
-    display: none;
+    transform: translate(-100%, 0px);
+  }
+  &.active-menu {
+    transform: translate(0px, 0px);
+    z-index: 5;
   }
   &__content {
+    height: 100%;
+    @media (max-width: $md3+px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
   }
 
   &__content-logo {
@@ -68,14 +77,12 @@
 }
 
 //====================================================================================================
-
 .icon-menu {
-  display: none;
   @media (max-width: $md3+px) {
     display: block;
-    position: absolute;
-    top: 18px;
-    right: 10px;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
     width: 30px;
     height: 18px;
     cursor: pointer;
@@ -87,7 +94,7 @@
       position: absolute;
       width: 100%;
       height: 2px;
-      background-color: #000;
+      background-color: rgb(255, 255, 255);
       &:first-child {
         top: 0px;
       }

@@ -593,6 +593,9 @@ textarea.input {
   background-position: 50%;
   -webkit-filter: invert(1);
   filter: invert(1);
+  margin-right: auto;
+  margin-left: auto;
+  width: 90%;
 }
 
 .title {
@@ -1009,6 +1012,17 @@ body.ie ._ibg img {
   background: #0c0c14;
 }
 
+.header.active-menu {
+  -webkit-transform: translate(0px, 0px);
+      -ms-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+  z-index: 5;
+}
+
+.header__content {
+  height: 100%;
+}
+
 .header__content-logo a {
   background: #fb9328;
   color: #fff;
@@ -1069,14 +1083,8 @@ body.ie ._ibg img {
   color: #fb9328;
 }
 
-.icon-menu {
-  display: none;
-}
-
 .page {
   position: relative;
-  top: 0;
-  left: 80px;
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1088,13 +1096,12 @@ body.ie ._ibg img {
 }
 
 .main {
+  padding-left: 80px;
   min-height: 100vh;
   min-width: 100vw;
-  position: relative;
 }
 
 .main__head {
-  position: absolute;
   padding: 30px 120px 0 50px;
   top: 0;
   left: 0;
@@ -1185,7 +1192,7 @@ body.ie ._ibg img {
 
 .about {
   padding: 100px 0;
-  position: relative;
+  padding-left: 80px;
   background: #0e0e17;
 }
 
@@ -1381,6 +1388,10 @@ body.ie ._ibg img {
     font-size: 18px;
   }
 
+  .border {
+    width: 80%;
+  }
+
   .about__container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1408,15 +1419,29 @@ body.ie ._ibg img {
   }
 
   .header {
-    position: relative;
-    display: none;
+    -webkit-transform: translate(-100%, 0px);
+        -ms-transform: translate(-100%, 0px);
+            transform: translate(-100%, 0px);
+  }
+
+  .header__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 
   .icon-menu {
     display: block;
-    position: absolute;
-    top: 18px;
-    right: 10px;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
     width: 30px;
     height: 18px;
     cursor: pointer;
@@ -1432,7 +1457,7 @@ body.ie ._ibg img {
     position: absolute;
     width: 100%;
     height: 2px;
-    background-color: #000;
+    background-color: white;
   }
 
   .icon-menu span:first-child {
@@ -1468,21 +1493,39 @@ body.ie ._ibg img {
     position: static;
   }
 
+  .main {
+    padding-left: 0px;
+  }
+
   .main__head {
     display: none;
   }
 
   .main__content {
-    padding: 300px 80px;
+    padding: 200px 60px;
     width: 100%;
   }
 
   .main__content-text {
     width: 80%;
   }
+
+  .about {
+    padding-left: 0px;
+  }
 }
 
 @media (max-width: 479.98px) {
+  .main__content-title {
+    font-size: 50px;
+    font-weight: 700;
+  }
+
+  .about__logo-img {
+    width: 200px;
+    height: 200px;
+  }
+
   .about__stats {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
