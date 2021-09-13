@@ -1,7 +1,5 @@
 window.addEventListener('scroll', () => {
   let scrollDistance = window.scrollY
-
-  console.log(scrollDistance);
   document.querySelectorAll('section').forEach((el, i) => {
     if (el.offsetTop - document.querySelector('.nav').clientHeight <= scrollDistance) {
       document.querySelectorAll('.nav-js a').forEach((el) => {
@@ -11,5 +9,38 @@ window.addEventListener('scroll', () => {
       })
       document.querySelectorAll('.nav-js li')[i].querySelector('a').classList.add('active')
     }
+  })
+
+})
+
+
+/* var num = document.getElementById("text"),
+  arr = ["Sasha", "Sashenka"],
+  c = 0;
+
+function loop() {
+  num.innerHTML = ++c % 2 ? arr.reverse()[1] : Sasko;
+}
+
+setInterval(loop, 1000); */
+
+const filterBox = document.querySelectorAll('.work__grid-item')
+
+document.querySelector('.work__tags').addEventListener('click', event => {
+  if (event.target.tagName !== 'LI') return false
+  let filterClass = event.target.dataset['f']
+  filterBox.forEach(elem => {
+    elem.classList.remove('hide')
+    if (!elem.classList.contains(filterClass) && filterClass !== 'all') {
+      elem.classList.add('hide')
+    }
+  })
+})
+
+const list = document.querySelectorAll('.work__tags ul li')
+list.forEach(item => {
+  item.addEventListener('click', (e) => {
+    list.forEach(el => { el.classList.remove('active'); });
+    item.classList.add('active')
   })
 })
