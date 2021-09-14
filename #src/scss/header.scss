@@ -44,6 +44,9 @@
     padding-top: 45px;
     padding-bottom: 45px;
     justify-content: center;
+    @media (max-width: $md3+px) {
+      margin-bottom: 40px;
+    }
   }
 }
 .nav {
@@ -82,7 +85,7 @@
     display: block;
     position: fixed;
     right: 30px;
-    bottom: 30px;
+    bottom: 80px;
     width: 30px;
     height: 18px;
     cursor: pointer;

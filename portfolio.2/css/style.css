@@ -64,6 +64,10 @@
   content: "\e9ca";
 }
 
+._icon-arrow-up2:before {
+  content: "\ea3a";
+}
+
 ._icon-embed2:before {
   content: "\ea80";
 }
@@ -682,6 +686,33 @@ textarea.input {
     padding: 0;
     margin: 0;
   }
+}
+
+.upbtn {
+  text-align: center;
+  z-index: 9999;
+  padding: 15px;
+  color: #fb9328;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  border: 3px solid #fb9328;
+  border-radius: 50%;
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: all 0.7s ease-in-out;
+  -o-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
+  background-color: #fff;
+  font-size: 30px;
+}
+
+.upbtn:hover {
+  -webkit-transform: scale(1.2) !important;
+      -ms-transform: scale(1.2) !important;
+          transform: scale(1.2) !important;
 }
 
 .row:after {
@@ -1696,20 +1727,6 @@ body.ie ._ibg img {
   opacity: 0;
 }
 
-.work__grid-item-content:hover {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.65);
-  z-index: 3;
-  opacity: 1;
-  -webkit-transition: background, opacity 0.8s ease 0s;
-  -o-transition: background, opacity 0.8s ease 0s;
-  transition: background, opacity 0.8s ease 0s;
-}
-
 .work__grid-item-links {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1722,16 +1739,14 @@ body.ie ._ibg img {
 }
 
 .work__grid-item-btn {
+  position: absolute;
+  bottom: -50px;
+  right: 0;
   color: #000;
   background-color: #fff;
   padding: 10px;
-  margin-right: 5px;
   border-radius: 50%;
   font-size: 20px;
-}
-
-.work__grid-item-btn:last-child {
-  margin: 0px 0px 0px 0px;
 }
 
 .work__grid-item-title {
@@ -2559,6 +2574,10 @@ body.ie ._ibg img {
     padding: 0 10px;
   }
 
+  .upbtn {
+    display: none;
+  }
+
   .header {
     -webkit-transform: translate(-100%, 0px);
         -ms-transform: translate(-100%, 0px);
@@ -2578,11 +2597,15 @@ body.ie ._ibg img {
             justify-content: space-between;
   }
 
+  .header__content-nav {
+    margin-bottom: 40px;
+  }
+
   .icon-menu {
     display: block;
     position: fixed;
     right: 30px;
-    bottom: 30px;
+    bottom: 80px;
     width: 30px;
     height: 18px;
     cursor: pointer;
@@ -2710,6 +2733,58 @@ body.ie ._ibg img {
   .education__graph {
     width: 80%;
     margin: 15px;
+  }
+}
+
+@media (any-hover: hover) {
+  .work__grid-item-content:hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.65);
+    z-index: 3;
+    opacity: 1;
+    -webkit-transition: background, opacity 0.8s ease 0s;
+    -o-transition: background, opacity 0.8s ease 0s;
+    transition: background, opacity 0.8s ease 0s;
+  }
+
+  .work__grid-item-content:hover .work__grid-item-btn:last-child {
+    bottom: 5px;
+    right: 50px;
+    -webkit-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+  }
+
+  .work__grid-item-content:hover .work__grid-item-btn:first-child {
+    bottom: 5px;
+    right: 5px;
+    -webkit-transition: all 0.8s ease 0s;
+    -o-transition: all 0.8s ease 0s;
+    transition: all 0.8s ease 0s;
+  }
+}
+
+@media (any-hover: none) {
+  .work__grid-item-content {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.65);
+    z-index: 3;
+    opacity: 1;
+  }
+
+  .work__grid-item-btn:last-child {
+    bottom: 5px;
+    right: 50px;
+  }
+
+  .work__grid-item-btn:first-child {
+    bottom: 5px;
+    right: 5px;
   }
 }
 

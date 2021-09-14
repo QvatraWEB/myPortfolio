@@ -3,8 +3,8 @@
 <script src="js/vendors.min.js"></script>
 <script src="js/app.min.js"></script>
 
-<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
-  integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
 <script>var Revealator = typeof Revealator !== 'undefined' ? Revealator : {};
 
@@ -100,3 +100,23 @@
       }
     });
   });</script>
+
+<script>
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 100) {
+      $('.upbtn').css({
+        transform: 'scale(1)'
+      });
+    } else {
+      $('.upbtn').css({
+        transform: 'scale(0)'
+      });
+    }
+  });
+  $('.upbtn').on('click', function () {
+    $('html, body').animate({
+      scrollTop: 0
+    }, 500);
+    return false;
+  });
+</script>

@@ -545,16 +545,37 @@
     width: 100%;
     justify-content: space-between;
     opacity: 0;
-    &:hover {
-      position: absolute;
-      top: 0;
-      left: 0;
+    @media (any-hover: hover) {
+      &:hover {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.65);
+        z-index: 3;
+        opacity: 1;
+        transition: background, opacity 0.8s ease 0s;
+        .work__grid-item-btn {
+          &:last-child {
+            bottom: 5px;
+            right: 50px;
+            transition: all 0.5s ease 0s;
+          }
+          &:first-child {
+            bottom: 5px;
+            right: 5px;
+            transition: all 0.8s ease 0s;
+          }
+        }
+      }
+    }
+    @media (any-hover: none) {
       width: 100%;
       height: 100%;
       background: rgba(0, 0, 0, 0.65);
       z-index: 3;
       opacity: 1;
-      transition: background, opacity 0.8s ease 0s;
     }
   }
 
@@ -566,14 +587,24 @@
   }
 
   &__grid-item-btn {
+    position: absolute;
+    bottom: -50px;
+    right: 0;
     color: #000;
     background-color: #fff;
     padding: 10px;
-    margin-right: 5px;
     border-radius: 50%;
     font-size: 20px;
-    &:last-child {
-      margin: 0px 0px 0px 0px;
+
+    @media (any-hover: none) {
+      &:last-child {
+        bottom: 5px;
+        right: 50px;
+      }
+      &:first-child {
+        bottom: 5px;
+        right: 5px;
+      }
     }
   }
 
