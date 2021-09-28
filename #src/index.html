@@ -19,28 +19,30 @@
         <div class="main__head">
 
           <div class="main__contacts">
-            <a href="tel:+380971670059">(097) 167-00-59</a>
-            <a href="mailto:matvssv.yura@gmail.com"> matvssv.yura@gmail.com</a>
+            <a href="tel:+380971670059" target="blank">(097) 167-00-59</a>
+            <a href="mailto:matvssv.yura@gmail.com" target="blank"> matvssv.yura@gmail.com</a>
           </div>
           <div class="main__lang">
-
-            <a href="#" class="active">RU</a>
-            <a href="#">EN</a>
+            <input id="lang" type='checkbox' onclick="changeLagnuage()">
+            <label href="" for="lang" class="rus">RUS</label>
+            <label href="" for="lang" class="eng">ENG</label>
           </div>
+
         </div>
         <div class="main__content _container">
           <div class="main__content-text">
-            <div class="main__content-subtitle">Hello, My name is</div>
+            <div text="hello" class="main__content-subtitle">Hello, My name is</div>
 
             <div class="main__content-title">
-              <h1>Yura Matveev</h1>
+              <h1 text="name">Yura Matveev</h1>
             </div>
             <div class="main__content-job-box">
               <div class="main__content-job">Front-End Developer</div>
               <div class="main__content-job">Front Developer</div>
               <div class="main__content-job">End Developer</div>
             </div>
-            <div class="main__content-text">I design and develop services for customers of all sizes, specializing in
+            <div text="description" class="main__content-text">I design and develop services for customers of all sizes,
+              specializing in
               creating stylish, modern websites, web services and online stores.</div>
           </div>
         </div>
@@ -57,29 +59,33 @@
                 <a href="" class="_icon-github"></a>
                 <a href="" class="_icon-linkedin"></a>
               </div>
-              <div class="about__logo-subtitle">Front-End Developer</div>
+              <div class="about__logo-subtitle">Front-End <span text="front">Developer</span> </div>
 
-              <div class="about__logo-title">Yura Matveev</div>
+              <div text="name" class="about__logo-title">Yura Matveev</div>
             </div>
             <div class="about__content ">
-              <h3 class="title">Biography</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ut nihil laboriosam laudantium officia
+              <h3 class="title" text="biography">Biography</h3>
+              <p text="biography_desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ut nihil
+                laboriosam laudantium officia
                 aspernatur facere nostrum quas. Dignissimos consequuntur ad quod commodi debitis tenetur cum quas
                 inventore reiciendis aut.</p>
               <div class="about__stats">
                 <div class="about__stats-col">
                   <ul>
-                    <li><label>Name:</label><span>Yura Matveev</span></li>
-                    <li><label>Birthday:</label><span>5 October 1999</span></li>
-                    <li><label>Age:</label><span>21 years</span></li>
+                    <li><label text='title_name'>Name:</label><span text='name'>Yura Matveev</span></li>
+                    <li><label text='title_birthday'>Birthday:</label><span text='birthday'>5 October 1999</span></li>
+                    <li><label text='title_age'>Age:</label><span text="age">21 years</span></li>
 
                   </ul>
                 </div>
                 <div class="about__stats-col">
                   <ul>
-                    <li><label>Address:</label><span>Kyiv</span></li>
-                    <li><label>Phone:</label><span>(097) 167-00-59</span></li>
-                    <li><label>Email:</label><span>matvssv.yura@gmail.com</span></li>
+                    <li><label text='title_address'>Address:</label><span text='address'>Kyiv</span></li>
+                    <li><label text='title_phone'>Phone:</label><span><a href="tel:+380971670059" style="color: #fff"
+                          target="blank">(097) 167-00-59</a></span></li>
+                    <li><label>Email:</label><span><a href="mailto:matvssv.yura@gmail.com" style="color: #fff"
+                          target="blank">
+                          matvssv.yura@gmail.com</a></span></li>
                   </ul>
                 </div>
               </div>
@@ -87,14 +93,15 @@
           </div>
           <div class="border"></div>
           <div class="i-do">
-            <div class="title">What I do?</div>
+            <div text="iDo" class="title">What I do?</div>
             <div class="i-do__content">
               <div class="i-do__item">
                 <div class="i-do__circle"></div>
                 <div class="i-do__gray"></div>
                 <div class="i-do__logo _icon-mobile2"></div>
-                <div class="i-do__title">Web Design</div>
-                <div class="i-do__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                <div class="i-do__title" text='WebDesign'>Web Design</div>
+                <div class="i-do__subtitle" text='WebDesignDesk'>Lorem ipsum dolor sit amet, consectetur adipisicing
+                  elit, sed do eiusmod
                   tempor incididunt ut labore et dolore magna aliqua.
                 </div>
               </div>
@@ -102,9 +109,10 @@
                 <div class="i-do__logo _icon-display"></div>
                 <div class="i-do__circle"></div>
                 <div class="i-do__gray"></div>
-                <div class="i-do__title">Web Development
+                <div class="i-do__title" text='WebDevelopment'>Web Development
                 </div>
-                <div class="i-do__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                <div class="i-do__subtitle" text='WebDevelopmentDesk'>Lorem ipsum dolor sit amet, consectetur
+                  adipisicing elit, sed do eiusmod
                   tempor incididunt ut labore et dolore magna aliqua.
                 </div>
               </div>
@@ -112,8 +120,9 @@
                 <div class="i-do__circle"></div>
                 <div class="i-do__gray"></div>
                 <div class="i-do__logo _icon-embed2"></div>
-                <div class="i-do__title">Web Design</div>
-                <div class="i-do__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                <div class="i-do__title" text='coding'>Coding</div>
+                <div class="i-do__subtitle" text='codingDesk'>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                  sed do eiusmod
                   tempor incididunt ut labore et dolore magna aliqua.
                 </div>
               </div>
@@ -121,18 +130,20 @@
           </div>
           <div class="border"></div>
           <div class="education">
-            <div class="title">Education & Skills</div>
+            <div class="title" text='education'>Education & Skills</div>
             <div class="education__content">
               <div class="education__items">
                 <div class="education__item">
-                  <div class="education__item-date">2018-2020 /test</div>
-                  <div class="education__item-grade">Ph.D in Horriblensess /test</div>
-                  <div class="education__item-university">University Of Evil Doing /test</div>
+                  <div class="education__item-date">2020- <span text='present'>Present</span> (31.12.2021)</div>
+                  <div class="education__item-grade" text='master'>Master of Digital Economics</div>
+                  <div class="education__item-university" text='knute'>Kyiv National University of Trade and Economics
+                  </div>
                 </div>
                 <div class="education__item">
-                  <div class="education__item-date">2013-2016 /test</div>
-                  <div class="education__item-grade">Bsc. in Computer Science /test</div>
-                  <div class="education__item-university">World University /test</div>
+                  <div class="education__item-date">2016-2020</div>
+                  <div class="education__item-grade" text='bachelor'>Bachelor in Economic Cybernetics</div>
+                  <div class="education__item-university" text='knute'>Kyiv National University of Trade and Economics
+                  </div>
                 </div>
               </div>
               <div class="education__graph">
@@ -168,12 +179,12 @@
       <section id="work" class="work">
         <div class="_container">
           <div class="work__container">
-            <div class="title">My Works</div>
+            <div class="title" text='myWorks'>My Works</div>
             <div class="work__content">
               <div class="work__tags">
                 <ul>
-                  <li data-f="all" class="active">All</li>
-                  <li data-f="js">HTML + CSS + JS</li>
+                  <li data-f="all" class="active" text='all'>All</li>
+                  <li data-f="js">JS Vanilla</li>
                   <li data-f="react">React</li>
 
                 </ul>
@@ -182,7 +193,7 @@
                 <div class="work__grid">
                   <div class="work__grid-item js">
                     <div class="work__grid-item-content">
-                      <div class="work__grid-item-title">Test</div>
+                      <div class="work__grid-item-title">Funiro.</div>
                       <div class="work__grid-item-links">
                         <a href="" class="work__grid-item-btn _icon-earth"></a>
                         <a href="" class="work__grid-item-btn _icon-github"></a>
@@ -192,7 +203,7 @@
                   </div>
                   <div class="work__grid-item react">
                     <div class="work__grid-item-content">
-                      <div class="work__grid-item-title">Test</div>
+                      <div class="work__grid-item-title">ToDo App</div>
                       <div class="work__grid-item-links">
                         <a href="" class="work__grid-item-btn _icon-github"></a>
                       </div>
@@ -201,7 +212,18 @@
                   </div>
                   <div class="work__grid-item js">
                     <div class="work__grid-item-content">
-                      <div class="work__grid-item-title">Test</div>
+                      <div class="work__grid-item-title">JS Developments</div>
+                      <div class="work__grid-item-links">
+                        <a href="" class="work__grid-item-btn _icon-earth"></a>
+                        <a href="" class="work__grid-item-btn _icon-jsfiddle"></a>
+                        <a href="" class="work__grid-item-btn _icon-github"></a>
+                      </div>
+                    </div>
+                    <img src="./img/works/js-fiddle.png" alt="">
+                  </div>
+                  <div class="work__grid-item js">
+                    <div class="work__grid-item-content">
+                      <div class="work__grid-item-title">Browser home screen</div>
                       <div class="work__grid-item-links">
                         <a href="" class="work__grid-item-btn _icon-earth"></a>
                         <a href="" class="work__grid-item-btn _icon-github"></a>
@@ -211,7 +233,7 @@
                   </div>
                   <div class="work__grid-item react">
                     <div class="work__grid-item-content">
-                      <div class="work__grid-item-title">Test</div>
+                      <div class="work__grid-item-title">Real time chat on React</div>
                       <div class="work__grid-item-links">
                         <a href="" class="work__grid-item-btn _icon-github"></a>
                       </div>
@@ -220,7 +242,7 @@
                   </div>
                   <div class="work__grid-item js">
                     <div class="work__grid-item-content">
-                      <div class="work__grid-item-title">Test</div>
+                      <div class="work__grid-item-title">Landing</div>
                       <div class="work__grid-item-links">
                         <a href="" class="work__grid-item-btn _icon-earth"></a>
                         <a href="" class="work__grid-item-btn _icon-github"></a>
@@ -228,11 +250,22 @@
                     </div>
                     <img src="./img/works/landie.png" alt="">
                   </div>
-
-
-
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contacts" class="contacts">
+        <div class="_container">
+          <div class="contacts__container">
+            <div class="title" text='contacts'>Contacts</div>
+            <div class="contacts__text" text='contactText'>You can always contact me in the following ways:</div>
+            <div class="contacts__block">
+              <i class="_icon-phone"><a href="tel:+380971670059" target="blank">(097) 167-00-59</a></i>
+              <i class="_icon-mail4"><a href="mailto:matvssv.yura@gmail.com" target="blank">
+                  matvssv.yura@gmail.com</a></i>
+              <i class="_icon-telegram"><a href="https://telegram.me/matveev_yura" target="blank">@matveev_yura</a></i>
             </div>
           </div>
         </div>

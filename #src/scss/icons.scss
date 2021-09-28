@@ -24,7 +24,12 @@
     display: block;
   }
 }
-
+._icon-mail4:before {
+  content: "\ea86";
+}
+._icon-jsfiddle:before {
+  content: "\e901";
+}
 ._icon-home:before {
   content: "\e900";
 }
