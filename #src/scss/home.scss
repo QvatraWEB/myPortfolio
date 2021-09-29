@@ -396,7 +396,6 @@
   }
 
   &__graph {
-    margin-top: 15px;
     padding-bottom: 15px;
     flex: 0 0 auto;
     width: 53%;
@@ -523,9 +522,9 @@
     color: #fff;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     height: 100%;
     width: 100%;
-    justify-content: space-between;
     opacity: 0;
     @media (any-hover: hover) {
       &:hover {
@@ -604,6 +603,10 @@
     margin: 20px 0 4px;
     font-weight: 500;
     font-size: 25px;
+  }
+  &__grid-item-desk {
+    text-align: center;
+    margin: 0px 10px 0;
   }
 }
 

@@ -1,5 +1,5 @@
 window.addEventListener('scroll', () => {
-  let scrollDistance = window.scrollY
+  let scrollDistance = (window.scrollY)
   document.querySelectorAll('section').forEach((el, i) => {
     if (el.offsetTop - document.querySelector('.nav').clientHeight <= scrollDistance) {
       document.querySelectorAll('.nav-js a').forEach((el) => {
@@ -12,17 +12,6 @@ window.addEventListener('scroll', () => {
   })
 
 })
-
-
-/* var num = document.getElementById("text"),
-  arr = ["Sasha", "Sashenka"],
-  c = 0;
-
-function loop() {
-  num.innerHTML = ++c % 2 ? arr.reverse()[1] : Sasko;
-}
-
-setInterval(loop, 1000); */
 
 const filterBox = document.querySelectorAll('.work__grid-item')
 

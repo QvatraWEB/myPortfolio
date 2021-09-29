@@ -1169,8 +1169,8 @@ body.ie ._ibg img {
   display: none;
 }
 
-#lang:checked ~ .rus,
-#lang:not(:checked) ~ .eng {
+#lang:checked ~ .eng,
+#lang:not(:checked) ~ .ukr {
   display: none;
 }
 
@@ -1633,7 +1633,6 @@ label[for=lang]:hover {
 }
 
 .education__graph {
-  margin-top: 15px;
   padding-bottom: 15px;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
@@ -1770,11 +1769,11 @@ label[for=lang]:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   height: 100%;
   width: 100%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   opacity: 0;
 }
 
@@ -1807,6 +1806,11 @@ label[for=lang]:hover {
   margin: 20px 0 4px;
   font-weight: 500;
   font-size: 25px;
+}
+
+.work__grid-item-desk {
+  text-align: center;
+  margin: 0px 10px 0;
 }
 
 .contacts {

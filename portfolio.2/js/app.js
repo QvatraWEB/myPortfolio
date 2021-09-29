@@ -794,7 +794,7 @@ animate({
   }
 })();
 window.addEventListener('scroll', () => {
-  let scrollDistance = window.scrollY
+  let scrollDistance = (window.scrollY)
   document.querySelectorAll('section').forEach((el, i) => {
     if (el.offsetTop - document.querySelector('.nav').clientHeight <= scrollDistance) {
       document.querySelectorAll('.nav-js a').forEach((el) => {
@@ -807,17 +807,6 @@ window.addEventListener('scroll', () => {
   })
 
 })
-
-
-/* var num = document.getElementById("text"),
-  arr = ["Sasha", "Sashenka"],
-  c = 0;
-
-function loop() {
-  num.innerHTML = ++c % 2 ? arr.reverse()[1] : Sasko;
-}
-
-setInterval(loop, 1000); */
 
 const filterBox = document.querySelectorAll('.work__grid-item')
 
@@ -1836,7 +1825,13 @@ let ukr = {
   all: 'Всі',
   contacts: 'Контакти',
   contactText: 'Ви завжди можете зв\'язатися зі мною такими способами:',
-  brand: 'ЮМ'
+  brand: 'ЮМ',
+  funiroDesk: 'Простий лендинг інтернет-магазину з використанням чистого JavaScript',
+  toDoDesk: 'ToDo App написанный на React',
+  jsFiddleDesk: 'Розробка елементів функціоналу для сайтів на JS',
+  homeDesk: 'Стартова сторінка браузера де є пошук, погода по геолокації, та міні додаток ToDo',
+  chatDesk: 'Чат в реальному часі на React, з використанням Socket.IO, потрібно ввести ім\'я та бажану кімнату для спілкування',
+  landieDesk: 'Простий лендінг'
 };
 
 let eng = {
@@ -1870,7 +1865,13 @@ let eng = {
   all: 'All',
   contacts: 'Contacts',
   contactText: 'You can always contact me in the following ways:',
-  brand: 'YM'
+  brand: 'YM',
+  funiroDesk: 'Simple landing page for an online store using pure JavaScript',
+  toDoDesk: 'ToDo App written in React',
+  jsFiddleDesk: 'Development of functional elements for sites on JS',
+  homeDesk: 'Browser start page with search, geolocation weather, and mini ToDo app',
+  chatDesk: 'Live chat in React using Socket.IO you need to enter a name and the desired chat room.',
+  landieDesk: 'Simple landing'
 };
 
 changeLagnuage();

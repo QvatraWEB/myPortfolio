@@ -24,8 +24,8 @@
           </div>
           <div class="main__lang">
             <input id="lang" type='checkbox' onclick="changeLagnuage()">
-            <label href="" for="lang" class="rus">UKR</label>
-            <label href="" for="lang" class="eng">ENG</label>
+            <label for="lang" class="ukr">UKR</label>
+            <label for="lang" class="eng">ENG</label>
           </div>
 
         </div>
@@ -38,8 +38,8 @@
             </div>
             <div class="main__content-job-box">
               <div class="main__content-job">Front-End Developer</div>
-              <div class="main__content-job">Front Developer</div>
-              <div class="main__content-job">End Developer</div>
+              <div class="main__content-job">React Developer</div>
+              <div class="main__content-job">UI & UX Designer</div>
             </div>
             <div text="description" class="main__content-text">I design and develop services for customers of all sizes,
               specializing in
@@ -53,11 +53,9 @@
             <div class="about__logo ">
               <div class="about__logo-img"></div>
               <div class="about__logo-links">
-                <a href="" class="">
-                  <div class="_icon-telegram"></div>
-                </a>
-                <a href="" class="_icon-github"></a>
-                <a href="" class="_icon-linkedin"></a>
+                <a href="https://telegram.me/matveev_yura" target="blank" class="_icon-telegram"></a>
+                <a href="https://github.com/QvatraWEB" target="blank" class="_icon-github"></a>
+                <a href="https://www.linkedin.com/in/yura-matveev-48781585/" target="blank" class="_icon-linkedin"></a>
               </div>
               <div class="about__logo-subtitle">Front-End <span text="front">Developer</span> </div>
 
@@ -165,6 +163,14 @@
                 </div>
                 <div class="education__graph-skill">
                   <h6>JS Vanilla</h6>
+                  <span>60%</span>
+                  <div class="education__graph-skill-line revealator-slideright">
+                    <div style="width: 60%;"
+                      class="education__graph-skill-line-progress revealator-delay2 revealator-slideright"></div>
+                  </div>
+                </div>
+                <div class="education__graph-skill">
+                  <h6>React</h6>
                   <span>40%</span>
                   <div class="education__graph-skill-line revealator-slideright">
                     <div style="width: 40%;"
@@ -191,61 +197,82 @@
               </div>
               <div class="work__products">
                 <div class="work__grid">
-                  <div class="work__grid-item js">
-                    <div class="work__grid-item-content">
-                      <div class="work__grid-item-title">Funiro.</div>
-                      <div class="work__grid-item-links">
-                        <a href="" class="work__grid-item-btn _icon-earth"></a>
-                        <a href="" class="work__grid-item-btn _icon-github"></a>
-                      </div>
-                    </div>
-                    <img class="test" src="./img/works/funiro.png" alt="">
-                  </div>
                   <div class="work__grid-item react">
                     <div class="work__grid-item-content">
-                      <div class="work__grid-item-title">ToDo App</div>
+                      <div class="work__grid-item-title">Chat</div>
+                      <div class="work__grid-item-desk" text='chatDesk'>Real-time chat in React, using Socket.IO, there
+                        is an input of the name and the desired chat room</div>
                       <div class="work__grid-item-links">
-                        <a href="" class="work__grid-item-btn _icon-github"></a>
-                      </div>
-                    </div>
-                    <img src="./img/works/ToDo-app.png" alt="">
-                  </div>
-                  <div class="work__grid-item js">
-                    <div class="work__grid-item-content">
-                      <div class="work__grid-item-title">JS Developments</div>
-                      <div class="work__grid-item-links">
-                        <a href="" class="work__grid-item-btn _icon-earth"></a>
-                        <a href="" class="work__grid-item-btn _icon-jsfiddle"></a>
-                        <a href="" class="work__grid-item-btn _icon-github"></a>
-                      </div>
-                    </div>
-                    <img src="./img/works/js-fiddle.png" alt="">
-                  </div>
-                  <div class="work__grid-item js">
-                    <div class="work__grid-item-content">
-                      <div class="work__grid-item-title">Browser home screen</div>
-                      <div class="work__grid-item-links">
-                        <a href="" class="work__grid-item-btn _icon-earth"></a>
-                        <a href="" class="work__grid-item-btn _icon-github"></a>
-                      </div>
-                    </div>
-                    <img src="./img/works/momentun.png" alt="">
-                  </div>
-                  <div class="work__grid-item react">
-                    <div class="work__grid-item-content">
-                      <div class="work__grid-item-title">Real time chat on React</div>
-                      <div class="work__grid-item-links">
-                        <a href="" class="work__grid-item-btn _icon-github"></a>
+                        <a href="https://github.com/QvatraWEB/lite-chat" target="blank"
+                          class="work__grid-item-btn _icon-github"></a>
                       </div>
                     </div>
                     <img src="./img/works/react-chat.png" alt="">
                   </div>
                   <div class="work__grid-item js">
                     <div class="work__grid-item-content">
-                      <div class="work__grid-item-title">Landing</div>
+                      <div class="work__grid-item-title">Funiro.</div>
+                      <div class="work__grid-item-desk" text='funiroDesk'>Simple ecommerce landing page using pure
+                        JavaScript</div>
                       <div class="work__grid-item-links">
-                        <a href="" class="work__grid-item-btn _icon-earth"></a>
-                        <a href="" class="work__grid-item-btn _icon-github"></a>
+                        <a href="https://qvatraweb.github.io/Funiro./Funiro./index.html" target="blank"
+                          class="work__grid-item-btn _icon-earth"></a>
+                        <a href="https://github.com/QvatraWEB/Funiro." target="blank"
+                          class="work__grid-item-btn _icon-github"></a>
+                      </div>
+                    </div>
+                    <img class="test" src="./img/works/funiro.png" alt="">
+                  </div>
+                  <div class="work__grid-item js">
+                    <div class="work__grid-item-content">
+                      <div class="work__grid-item-title">Home page</div>
+                      <div class="work__grid-item-desk" text='homeDesk'>Browser start page with search, geolocation
+                        weather, and ToDo mini app</div>
+                      <div class="work__grid-item-links">
+                        <a href="https://qvatraweb.github.io/chromeExtention/momentum/" target="blank"
+                          class="work__grid-item-btn _icon-earth"></a>
+                        <a href="https://github.com/QvatraWEB/chromeExtention" target="blank"
+                          class="work__grid-item-btn _icon-github"></a>
+                      </div>
+                    </div>
+                    <img src="./img/works/momentun.png" alt="">
+                  </div>
+                  <div class="work__grid-item js">
+                    <div class="work__grid-item-content">
+                      <div class="work__grid-item-title">JS Developments</div>
+                      <div class="work__grid-item-desk" text='jsFiddleDesk'>Development of functional elements for sites
+                        on JS</div>
+                      <div class="work__grid-item-links">
+                        <a href="https://qvatraweb.github.io/js-miniProjects/index.html" target="blank"
+                          class="work__grid-item-btn _icon-earth"></a>
+                        <a href="https://jsfiddle.net/QvatraWEB/cu0egpk9/2/" target="blank"
+                          class="work__grid-item-btn _icon-jsfiddle"></a>
+                        <a href="https://github.com/QvatraWEB/js-miniProjects" target="blank"
+                          class="work__grid-item-btn _icon-github"></a>
+                      </div>
+                    </div>
+                    <img src="./img/works/js-fiddle.png" alt="">
+                  </div>
+                  <div class="work__grid-item react">
+                    <div class="work__grid-item-content">
+                      <div class="work__grid-item-title">ToDo App</div>
+                      <div class="work__grid-item-desk" text='toDoDesk'>ToDo App written in React</div>
+                      <div class="work__grid-item-links">
+                        <a href="https://github.com/QvatraWEB/react-todo" target="blank"
+                          class="work__grid-item-btn _icon-github"></a>
+                      </div>
+                    </div>
+                    <img src="./img/works/ToDo-app.png" alt="">
+                  </div>
+                  <div class="work__grid-item js">
+                    <div class="work__grid-item-content">
+                      <div class="work__grid-item-title">Landing</div>
+                      <div class="work__grid-item-desk" text='landieDesk'>Simple landing</div>
+                      <div class="work__grid-item-links">
+                        <a href="https://qvatraweb.github.io/Landie/Landie/index.html" target="blank"
+                          class="work__grid-item-btn _icon-earth"></a>
+                        <a href="https://github.com/QvatraWEB/Landie" target="blank"
+                          class="work__grid-item-btn _icon-github"></a>
                       </div>
                     </div>
                     <img src="./img/works/landie.png" alt="">
