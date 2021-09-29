@@ -1,4 +1,4 @@
-let rus = {
+let ukr = {
   hello: 'Привіт, мене звати',
   name: 'Юрій Матвєєв',
   description: 'Я фронтенд-розробник-самоучка, що займається створенням якісних і сучасних веб-сайтів і додатків.',
@@ -14,21 +14,22 @@ let rus = {
   address: 'Києві',
   title_phone: 'Моб. тел.',
   iDo: 'Чим я займаюсь?',
-  WebDesign: 'Web Design',
-  WebDesignDesk: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-  WebDevelopment: 'Web Development',
-  WebDevelopmentDesk: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-  coding: 'Coding',
-  codingDesk: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-  education: 'Education & Skills',
-  present: 'Present',
-  master: 'Master of Digital Economics',
-  knute: 'Kyiv National University of Trade and Economics',
-  bachelor: 'Bachelor in Economic Cybernetics',
-  myWorks: 'My Works',
-  all: 'All',
-  contacts: 'Contacts',
-  contactText: 'You can always contact me in the following ways:'
+  WebDesign: 'Веб дизайн',
+  WebDesignDesk: 'Я ціную прості за структурою та чисті шаблони з продуманою взаємодію. <br> Figma, Photoshop, Illustrator, Sketch.',
+  WebDevelopment: 'Веб-розробка',
+  WebDevelopmentDesk: 'Адаптивні веб-сайти, розроблені для оптимального користувацького досвіду, який відповідає цілям клієнта. <br> Javascript, React, Socket.IO, Express.js, Node.js, VS Code.',
+  coding: 'Написння коду',
+  codingDesk: 'Мені подобається писати код з нуля, втілювати ідеї в життя у браузері. <br> HTML, CSS, LESS, SASS (SCSS), Bootstrap, Github, Terminal.',
+  education: 'Освіта та навички',
+  present: 'По теперішній час',
+  master: 'Магістр цифрової економіки',
+  knute: 'Київський національний торговельно-економічний університет',
+  bachelor: 'Бакалавр економічної кібернетики',
+  myWorks: 'Мої роботи',
+  all: 'Всі',
+  contacts: 'Контакти',
+  contactText: 'Ви завжди можете зв\'язатися зі мною такими способами:',
+  brand: 'ЮМ'
 };
 
 let eng = {
@@ -48,11 +49,11 @@ let eng = {
   title_phone: 'Phone',
   iDo: 'What I do?',
   WebDesign: 'Web Design',
-  WebDesignDesk: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+  WebDesignDesk: 'I value simple content structure, clean design patterns, and thoughtful interactions. <br> Figma, Photoshop, Illustrator, Sketch.',
   WebDevelopment: 'Web Development',
-  WebDevelopmentDesk: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+  WebDevelopmentDesk: 'Responsive websites designed for an optimal user experience that meets customer goals. <br> Javascript, React, Socket.IO, Express.js, Node.js, VS Code.',
   coding: 'Coding',
-  codingDesk: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+  codingDesk: 'I like to code things from scratch, and enjoy bringing ideas to life in the browser. <br> HTML, CSS, LESS, SASS(SCSS), Bootstrap, Github, Terminal.',
   education: 'Education & Skills',
   present: 'Present',
   master: 'Master of Digital Economics',
@@ -61,13 +62,14 @@ let eng = {
   myWorks: 'My Works',
   all: 'All',
   contacts: 'Contacts',
-  contactText: 'You can always contact me in the following ways:'
+  contactText: 'You can always contact me in the following ways:',
+  brand: 'YM'
 };
 
 changeLagnuage();
 
 function changeLagnuage() {
-  let language = lang.checked ? rus : eng;
+  let language = lang.checked ? ukr : eng;
   document.querySelectorAll('[text]').forEach(el => {
     el.innerHTML = language[el.getAttribute('text')];
   })
