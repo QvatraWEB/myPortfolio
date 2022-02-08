@@ -35,7 +35,8 @@ let ukr = {
   jsFiddleDesk: 'Розробка елементів функціоналу для сайтів на JS',
   homeDesk: 'Стартова сторінка браузера де є пошук, погода по геолокації, та міні додаток ToDo',
   chatDesk: 'Чат в реальному часі на React, з використанням Socket.IO, потрібно ввести ім\'я та бажану кімнату для спілкування',
-  landieDesk: 'Простий лендінг'
+  landieDesk: 'Простий лендінг',
+  excelDesk: 'Можна міняти назву документа, в комірках можна змінювати стилі та положення, вміст комірок динамічно змінюється, можна вводити прості формули'
 };
 
 let eng = {
@@ -74,8 +75,9 @@ let eng = {
   toDoDesk: 'ToDo App written in React',
   jsFiddleDesk: 'Development of functional elements for sites on JS',
   homeDesk: 'Browser start page with search, geolocation weather, and mini ToDo app',
-  chatDesk: 'Live chat in React using Socket.IO you need to enter a name and the desired chat room.',
-  landieDesk: 'Simple landing'
+  chatDesk: 'Live chat in React using Socket.IO you need to enter a name and the desired chat room',
+  landieDesk: 'Simple landing',
+  excelDesk: 'You can change the name of the document, in cells you can change styles and positions, the contents of the cells change dynamically, you can enter simple formulas'
 };
 
 changeLagnuage();

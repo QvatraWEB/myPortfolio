@@ -371,7 +371,7 @@ textarea.input {
   font-size: 16px;
   color: #ffffff;
   letter-spacing: -0.3px;
-  line-height: calc(20 / 16);
+  line-height: 1.25;
   cursor: pointer;
 }
 
@@ -445,7 +445,7 @@ textarea.input {
   font-size: 16px;
   color: #ffffff;
   letter-spacing: -0.3px;
-  line-height: calc(20 / 16);
+  line-height: 1.25;
 }
 
 .options__text:before {
@@ -1814,8 +1814,7 @@ label[for=lang]:hover {
 }
 
 .contacts {
-  padding: 100px 0;
-  padding-left: 80px;
+  padding: 100px 0 100px 80px;
   background: #0e0e17;
 }
 
