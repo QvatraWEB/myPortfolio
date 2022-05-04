@@ -2859,6 +2859,12 @@ label[for=lang]:hover {
     height: 200px;
   }
 
+  .about__logo-img img {
+    width: 200px;
+    left: -5px;
+    top: -5px;
+  }
+
   .about__stats {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

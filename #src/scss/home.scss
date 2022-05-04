@@ -199,7 +199,12 @@
     @media (max-width: $md4+px) {
       width: 200px;
       height: 200px;
-      
+      img{
+        width: 200px;
+        left:-5px;
+        top: -5px;
+
+      }
     }
     
   }
