@@ -11,7 +11,7 @@ let ukr = {
   title_age: 'Вік:',
   age: '21 років',
   title_address: 'Проживаю у:',
-  address: 'Києві',
+  address: 'Хмельницькому',
   title_phone: 'Моб. тел.',
   iDo: 'Чим я займаюсь?',
   WebDesign: 'Веб дизайн',
@@ -36,12 +36,14 @@ let ukr = {
   homeDesk: 'Стартова сторінка браузера де є пошук, погода по геолокації, та міні додаток ToDo',
   chatDesk: 'Чат в реальному часі на React, з використанням Socket.IO, потрібно ввести ім\'я та бажану кімнату для спілкування',
   landieDesk: 'Простий лендінг',
-  excelDesk: 'Можна міняти назву документа, в комірках можна змінювати стилі та положення, вміст комірок динамічно змінюється, можна вводити прості формули'
+  excelDesk: 'Можна міняти назву документа, в комірках можна змінювати стилі та положення, вміст комірок динамічно змінюється, можна вводити прості формули',
+  zenMaxDesk: 'Інтернет-магазин з продажу ножів. Головна сторінка, каталог та карточка товару',
+  landieDesk: 'Простенький лендінг'
 };
 
 let eng = {
   hello: 'Hello, My name is',
-  name: 'Yura Matveev',
+  name: 'Yuri Matveev',
   description: 'I\'m a self-taught front end developer, devoted to building quality and modern websites and apps.',
   front: 'Developer',
   biography: 'About me',
@@ -50,9 +52,9 @@ let eng = {
   title_birthday: 'Birthday:',
   birthday: '5 October 1999',
   title_age: 'Age:',
-  age: '21 years',
+  age: '22 years',
   title_address: 'Address:',
-  address: 'Kyiv',
+  address: 'Khmelnytskyi',
   title_phone: 'Phone',
   iDo: 'What I do?',
   WebDesign: 'Web Design',
@@ -77,7 +79,9 @@ let eng = {
   homeDesk: 'Browser start page with search, geolocation weather, and mini ToDo app',
   chatDesk: 'Live chat in React using Socket.IO you need to enter a name and the desired chat room',
   landieDesk: 'Simple landing',
-  excelDesk: 'You can change the name of the document, in cells you can change styles and positions, the contents of the cells change dynamically, you can enter simple formulas'
+  excelDesk: 'You can change the name of the document, in cells you can change styles and positions, the contents of the cells change dynamically',
+  zenMaxDesk: 'Online shop selling knives. Main page, catalog and product card',
+  landieDesk: 'Simple landing page'
 };
 
 changeLagnuage();

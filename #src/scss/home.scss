@@ -116,6 +116,24 @@
 
   &__content-text {
     font-weight: 300;
+    margin-bottom: 30px;
+  }
+  &__button{
+    background: #fff;
+    color: #0b0b13;
+    padding: 10px 25px;
+    line-height: 42px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s ease 0s;
+    @media (any-hover: hover){
+      &:hover{
+        background: transparent;
+        color: #fff;
+      }
+    }
   }
 }
 
@@ -143,7 +161,8 @@
     width: 33.33333333%;
     text-align: center;
     margin-right: 90px;
-    @media (max-width: $md1+px) {
+    
+    @media (max-width: $md1 + px) {
       margin-right: 60px;
     }
     @media (max-width: $md2+px) {
@@ -160,18 +179,29 @@
     margin: auto;
     overflow: hidden;
     border: 5px solid $orange;
+    position: relative;
+    img{
+      position: absolute;
+      left: 40px;
+      top: 40px;
+      width: 260px;
+    }
     @media (max-width: $md1+px) {
+      img{
+        left: 15px;
+        top: 20px;
+
+      }
       width: 300px;
       height: 300px;
+      
     }
     @media (max-width: $md4+px) {
       width: 200px;
       height: 200px;
-      img {
-        margin-left: -30px;
-        width: 300px;
-      }
+      
     }
+    
   }
 
   &__logo-links {

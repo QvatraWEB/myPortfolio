@@ -4,6 +4,9 @@
   "description": "Start template with Gulp",
   "author": "FLS",
   "private": true,
+  "scripts": {
+    "gulp": "gulp"
+  },
   "license": "GNU General Public License (GPL)",
   "devDependencies": {
     "browser-sync": "latest",
