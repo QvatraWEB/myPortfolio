@@ -1,3 +1,3 @@
 # myPortfolio
 
-https://matveevyura.github.io/myPortfolio/portfolio.2/
+https://matveevyura.github.io/myPortfolio/myPortfolio/
