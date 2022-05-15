@@ -1414,7 +1414,7 @@ label[for=lang]:hover {
 .about__logo-img {
   border-radius: 50%;
   width: 356px;
-  height: 358px;
+  height: 356px;
   margin: auto;
   overflow: hidden;
   border: 5px solid #fb9328;
@@ -1423,9 +1423,9 @@ label[for=lang]:hover {
 
 .about__logo-img img {
   position: absolute;
-  left: 40px;
-  top: 40px;
-  width: 260px;
+  left: -10px;
+  top: -30px;
+  width: 350px;
 }
 
 .about__logo-links {
@@ -2623,8 +2623,8 @@ label[for=lang]:hover {
   }
 
   .about__logo-img img {
-    left: 15px;
-    top: 20px;
+    left: -50px;
+    top: -50px;
   }
 }
 
@@ -2860,9 +2860,9 @@ label[for=lang]:hover {
   }
 
   .about__logo-img img {
-    width: 200px;
-    left: -5px;
-    top: -5px;
+    width: 250px;
+    left: -40px;
+    top: -50px;
   }
 
   .about__stats {

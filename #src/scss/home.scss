@@ -175,21 +175,21 @@
   &__logo-img {
     border-radius: 50%;
     width: 356px;
-    height: 358px;
+    height: 356px;
     margin: auto;
     overflow: hidden;
     border: 5px solid $orange;
     position: relative;
     img{
       position: absolute;
-      left: 40px;
-      top: 40px;
-      width: 260px;
+      left: -10px;
+      top: -30px;
+      width: 350px;
     }
     @media (max-width: $md1+px) {
       img{
-        left: 15px;
-        top: 20px;
+        left: -50px;
+        top: -50px;
 
       }
       width: 300px;
@@ -200,9 +200,9 @@
       width: 200px;
       height: 200px;
       img{
-        width: 200px;
-        left:-5px;
-        top: -5px;
+        width: 250px;
+        left:-40px;
+        top: -50px;
 
       }
     }
